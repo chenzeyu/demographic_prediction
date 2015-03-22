@@ -7,14 +7,6 @@ from sklearn.cross_validation import KFold
 import pickle
 
 
-# ({'h':True},'neg')
-file = open('train.csv', 'rb')
-reader = csv.reader(file, 'excel')
-users = {}
-for row in reader:
-    users[row[0]] = {'gender': row[1], 'age': row[2]}
-
-
 def load_checkins():
     client = MongoClient('localhost', 27017)
     db = client.test
@@ -48,7 +40,7 @@ def convert_time(t):
     return determine_time_of_day(datetime.datetime.fromtimestamp(t))
 
 
-def obtain_feats(checkins, users):
+def obtain_feats(checkins, users=None):
     age_feats = []
     gender_feats = []
     for c in checkins:
@@ -64,11 +56,15 @@ def obtain_feats(checkins, users):
                 categories = venue['categories']
                 for cate in categories:
                     names.append(cate['name'])
-            if c['userId'] not in users:
-                continue
             feat = generate_feats(names)
-            age_feats.append((feat, users[c['userId']]['age']))
-            gender_feats.append((feat, users[c['userId']]['gender']))
+            if users == None:
+                age_feats.append((feat, 'dummy'))
+                gender_feats.append((feat, 'dummy'))
+            else:
+                if c['userId'] not in users:
+                    continue
+                age_feats.append((feat, users[c['userId']]['age']))
+                gender_feats.append((feat, users[c['userId']]['gender']))
     return age_feats, gender_feats
 
 
@@ -125,7 +121,10 @@ def checkin_predict(user_list, classifier=False, classifiers=[]):
         gender_classifier = classifiers[1]
     results = []
     for u in user_list:
-        feats = obtain_feats(get_checkins_of_user(u), users)
+        feats = obtain_feats(get_checkins_of_user(u))
+        if not feats[0] and not feats[1]:
+            results.append(('none', 'none'))
+            continue
         ages = {}
         genders = {}
         for age_feat in feats[0]:
@@ -146,24 +145,21 @@ def checkin_predict(user_list, classifier=False, classifiers=[]):
         age = max(ages, key=ages.get)
         gender = max(genders, key=genders.get)
         results.append((gender, age))
-        return results
+    return results
 
 
-userss = ['a8e83e6c3b5e83ae4814adcabe24b566']
-# checkin_predict(userss)
-
-
-def checkin_train_and_predict(train_l, test_l):
+def checkin_train_and_predict(train_l, genders, ages, test_l):
     age_classifier = MaxentClassifier
     gender_classifier = MaxentClassifier
     checkins = []
+    _users = {}
+    for i in range(0, len(train_l)):
+        _users[train_l[i]] = {'gender': genders[i], 'age': ages[i]}
     for u in train_l:
         checkins.append(get_checkins_of_user(u))
     checkins = [item for sublist in checkins for item in sublist]
-    feats = obtain_feats(checkins, users)
+    feats = obtain_feats(checkins, _users)
     age_classifier = age_classifier.train(feats[0], max_iter=30)
     gender_classifier = gender_classifier.train(feats[1], max_iter=30)
     checkin_predict(test_l, classifier=True, classifiers=[age_classifier, gender_classifier])
 
-
-checkin_train_and_predict(userss, userss)
