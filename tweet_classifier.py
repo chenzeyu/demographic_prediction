@@ -46,6 +46,8 @@ def obtain_feats(u, users=None):
     file = open('liwcresult', 'rb')
     reader = csv.reader(file, delimiter='\t')
     line = reader.next()
+    age_feat = None
+    gender_feat = None
     for row in reader:
         names = []
         userId = row[0].replace('.txt', '')
@@ -117,6 +119,9 @@ def tweet_predict(user_list, classifier=False, classifiers=[]):
     results = []
     for u in user_list:
         temp_feats = obtain_feats(u)
+        if temp_feats[0] is None and temp_feats[1] is None:
+            results.append(('none', 'none'))
+            continue
         age_feat = temp_feats[0][0]
         gender_feat = temp_feats[1][0]
         age = age_classifier.classify(age_feat)
@@ -142,5 +147,4 @@ def tweet_train_and_predict(train_l, genders, ages, test_l):
     age_classifier = age_classifier.train(age_feats, max_iter=10)
     gender_classifier = gender_classifier.train(gender_feats, max_iter=10)
     return tweet_predict(test_l, classifier=True, classifiers=[age_classifier, gender_classifier])
-
 
