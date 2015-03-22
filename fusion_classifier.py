@@ -150,21 +150,21 @@ def perform_k_fold(filename):
     g_target = []
     a_target = []
 
-    for z in range(0, len(users)):
-      if z in traincv:
-        train.append(users[z])
-        g_train.append(genders[z])
-        a_train.append(ages[z])
+    for i in range(0, len(users)):
+      if i in traincv:
+        train.append(users[i])
+        g_train.append(genders[i])
+        a_train.append(ages[i])
       else:
-        target.append(users[z])
-        g_target.append(genders[z])
-        a_target.append(ages[z])
+        target.append(users[i])
+        g_target.append(genders[i])
+        a_target.append(ages[i])
 
 
 
-    image_pred = image_train_and_predict(train, g_train, a_train, target)
-    checkin_pred = checkin_train_and_predict(train, g_train, a_train, target)
-    tweet_pred = tweet_train_and_predict(train, g_train, a_train, target)
+    image_pred = image_predict(train)
+    checkin_pred = checkin_predict(train)
+    tweet_pred = tweet_predict(train)
 
     compiled_features = []
     compiled_targets = []
@@ -182,8 +182,8 @@ def perform_k_fold(filename):
 
 
     image_pred = image_predict(target)
-    checkin_pred = checkin_pred(target)
-    tweet_pred = tweet_pred(target)
+    checkin_pred = checkin_predict(target)
+    tweet_pred = tweet_predict(target)
 
     compiled_features = []
     compiled_targets = []
@@ -193,7 +193,7 @@ def perform_k_fold(filename):
       dummy.extend(gender_LE.transform([image_pred[i][0], checkin_pred[i][0], tweet_pred[i][0]]))
       dummy.extend(age_LE.transform([image_pred[i][1], checkin_pred[i][1], tweet_pred[i][1]]))
       compiled_features.append(dummy)
-      compiled_targets.append(g_train[i]+" # "+a_train[i])
+      compiled_targets.append(g_target[i]+" # "+a_target[i])
 
     pred = fusionClassifier.predict(compiled_features)
     print classification_report(compiled_targets, pred)
