@@ -8,6 +8,7 @@ except:
    import pickle
 
 import numpy as np
+from numpy import *
 
 from sklearn.decomposition import RandomizedPCA
 
@@ -25,7 +26,6 @@ import skimage.io as io
 import skimage.transform as trans
 
 def image_predict(userIds):
-	print "start"
 	f = open("image_features.bin", "rb")
 	oriData = pickle.load(f)
 	f.close()
@@ -55,10 +55,7 @@ def image_predict(userIds):
 	aP = ageClassifier.predict(test)
 
 	result = []
-	z = 0
 	for u in userIds:
-		print z
-		z+=1
 
 		male = 0
 		fem = 0
@@ -85,7 +82,6 @@ def image_predict(userIds):
 					d+=1
 				else:
 					e+=1
-		print male, fem, a, b, c, d, e
 
 		if fem==0 and male==0:
 			result.append(("none", "none"))
@@ -100,9 +96,6 @@ def image_predict(userIds):
 		aList.sort()
 		age = aList[4][1]
 		result.append((gender, age))
-
-	print "end"
-	print len(result)
 
 	return result
 
@@ -120,6 +113,8 @@ def image_train_and_predict(userIds, genders, ages, targets):
 	train = []
 	test = []
 	user = []
+	g_train = []
+	a_train = []
 
 	decomp = RandomizedPCA(n_components = 200)
 	oriData  = decomp.fit_transform(oriData)
@@ -131,6 +126,8 @@ def image_train_and_predict(userIds, genders, ages, targets):
 		userId = fileMap[i]
 		if userId in userIds:
 			train.append(oriData[i])
+			g_train.append(userMap[userId][0])
+			a_train.append(userMap[userId][1])
 		elif userId in targets:
 			user.append(userId)
 			test.append(oriData[i])
@@ -141,8 +138,8 @@ def image_train_and_predict(userIds, genders, ages, targets):
 	genderClassifier = GradientBoostingClassifier()
 	ageClassifier = GradientBoostingClassifier()
 
-	genderClassifier.fit(train, genders)
-	ageClassifier.fit(train, ages)
+	genderClassifier.fit(train, g_train)
+	ageClassifier.fit(train, a_train)
 
 	gP = genderClassifier.predict(test)
 	aP = ageClassifier.predict(test)
@@ -175,6 +172,10 @@ def image_train_and_predict(userIds, genders, ages, targets):
 					d+=1
 				else:
 					e+=1
+
+		if fem==0 and male==0:
+			result.append(("none", "none"))
+			continue
 
 		if fem > male:
 			gender = "FEMALE"
