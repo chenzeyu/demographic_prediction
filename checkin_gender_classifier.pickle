@@ -1,0 +1,3122 @@
+ccopy_reg
+_reconstructor
+p0
+(cnltk.classify.maxent
+MaxentClassifier
+p1
+c__builtin__
+object
+p2
+Ntp3
+Rp4
+(dp5
+S'_logarithmic'
+p6
+I01
+sS'_encoding'
+p7
+g0
+(cnltk.classify.maxent
+BinaryMaxentFeatureEncoding
+p8
+g2
+Ntp9
+Rp10
+(dp11
+S'_length'
+p12
+I501
+sS'_labels'
+p13
+(lp14
+S'MALE'
+p15
+aS'FEMALE'
+p16
+asS'_unseen'
+p17
+NsS'_alwayson'
+p18
+NsS'_mapping'
+p19
+(dp20
+(VGreek Restaurant
+p21
+I01
+S'MALE'
+p22
+tp23
+I197
+s(VPL
+p24
+I01
+S'MALE'
+p25
+tp26
+I300
+s(VEmbassy / Consulate
+p27
+I01
+S'FEMALE'
+p28
+tp29
+I453
+s(VHistory Museum
+p30
+I01
+S'FEMALE'
+p31
+tp32
+I274
+s(VDiner
+p33
+I01
+g28
+tp34
+I441
+s(VBurger Joint
+p35
+I01
+S'MALE'
+p36
+tp37
+I170
+s(VDog Run
+p38
+I01
+S'MALE'
+p39
+tp40
+I378
+s(VLight Rail
+p41
+I01
+g16
+tp42
+I227
+s(VHockey Arena
+p43
+I01
+S'MALE'
+p44
+tp45
+I495
+s(VDoctor's Office
+p46
+I01
+S'FEMALE'
+p47
+tp48
+I251
+s(VCL
+p49
+I01
+S'FEMALE'
+p50
+tp51
+I326
+s(VSandwich Place
+p52
+I01
+S'MALE'
+p53
+tp54
+I279
+s(VFair
+p55
+I01
+S'MALE'
+p56
+tp57
+I358
+s(VCaf?\ufffd
+p58
+I01
+g47
+tp59
+I91
+s(VTheater
+p60
+I01
+S'FEMALE'
+p61
+tp62
+I236
+s(VConcert Hall
+p63
+I01
+S'FEMALE'
+p64
+tp65
+I253
+s(VMultiplex
+p66
+I01
+g25
+tp67
+I216
+s(VIndian Restaurant
+p68
+I01
+g25
+tp69
+I205
+s(VSushi Restaurant
+p70
+I01
+g61
+tp71
+I129
+s(VFish Market
+p72
+I01
+S'MALE'
+p73
+tp74
+I486
+s(VSalon / Barbershop
+p75
+I01
+g56
+tp76
+I336
+s(VTown
+p77
+I01
+g73
+tp78
+I491
+s(VTravel Lounge
+p79
+I01
+g64
+tp80
+I311
+s(VResidential Building (Apartment / Condo)
+p81
+I01
+g56
+tp82
+I34
+s(VAirport
+p83
+I01
+g16
+tp84
+I99
+s(VPiano Bar
+p85
+I01
+g28
+tp86
+I465
+s(VCocktail Bar
+p87
+I01
+g25
+tp88
+I191
+s(VArcade
+p89
+I01
+g16
+tp90
+I406
+s(VWomen's Store
+p91
+I01
+g36
+tp92
+I154
+s(VNew American Restaurant
+p93
+I01
+S'FEMALE'
+p94
+tp95
+I353
+s(VMovie Theater
+p96
+I01
+g25
+tp97
+I215
+s(VCar Dealership
+p98
+I01
+g56
+tp99
+I494
+s(VSushi Restaurant
+p100
+I01
+S'MALE'
+p101
+tp102
+I152
+s(VGarden Center
+p103
+I01
+g56
+tp104
+I35
+s(VVideo Store
+p105
+I01
+g73
+tp106
+I473
+s(VMotel
+p107
+I01
+g56
+tp108
+I417
+s(VUY
+p109
+I01
+g50
+tp110
+I293
+s(VChurch
+p111
+I01
+g56
+tp112
+I458
+s(VSubway
+p113
+I01
+g25
+tp114
+I209
+s(VTaxi
+p115
+I01
+g64
+tp116
+I266
+s(VIndie Movie Theater
+p117
+I01
+g25
+tp118
+I247
+s(VGeneral College & University
+p119
+I01
+g16
+tp120
+I428
+s(VFinancial or Legal Service
+p121
+I01
+g39
+tp122
+I416
+s(VDE
+p123
+I01
+g31
+tp124
+I259
+s(VSports Bar
+p125
+I01
+g56
+tp126
+I370
+s(VAustralian Restaurant
+p127
+I01
+g61
+tp128
+I150
+s(VWings Joint
+p129
+I01
+g56
+tp130
+I332
+s(VHotel Bar
+p131
+I01
+g31
+tp132
+I363
+s(VDepartment Store
+p133
+I01
+g61
+tp134
+I109
+s(VTapas Restaurant
+p135
+I01
+g28
+tp136
+I381
+s(VShipping Store
+p137
+I01
+g39
+tp138
+I414
+s(VBuilding
+p139
+I01
+g36
+tp140
+I60
+s(VPolish Restaurant
+p141
+I01
+g25
+tp142
+I301
+s(VCity Hall
+p143
+I01
+g25
+tp144
+I474
+s(VIsland
+p145
+I01
+S'FEMALE'
+p146
+tp147
+I412
+s(VAutomotive Shop
+p148
+I01
+g56
+tp149
+I29
+s(VCampground
+p150
+I01
+g64
+tp151
+I425
+s(VTrain
+p152
+I01
+g56
+tp153
+I330
+s(VFood Court
+p154
+I01
+g61
+tp155
+I173
+s(VAccessories Store
+p156
+I01
+g94
+tp157
+I446
+s(S'time_of_day5'
+p158
+I01
+S'MALE'
+p159
+tp160
+I13
+s(VGourmet Shop
+p161
+I01
+g28
+tp162
+I352
+s(S'time_of_day6'
+p163
+I01
+g15
+tp164
+I0
+s(VAR
+p165
+I01
+S'MALE'
+p166
+tp167
+I88
+s(VCosmetics Shop
+p168
+I01
+g56
+tp169
+I432
+s(VDeli / Bodega
+p170
+I01
+g56
+tp171
+I299
+s(VBreakfast Spot
+p172
+I01
+g36
+tp173
+I52
+s(VFrench Restaurant
+p174
+I01
+g22
+tp175
+I207
+s(VCollege Cafeteria
+p176
+I01
+g36
+tp177
+I498
+s(VGB
+p178
+I01
+g166
+tp179
+I63
+s(VMountain
+p180
+I01
+g94
+tp181
+I487
+s(VBBQ Joint
+p182
+I01
+g64
+tp183
+I264
+s(VMotel
+p184
+I01
+g47
+tp185
+I180
+s(VGym / Fitness Center
+p186
+I01
+g31
+tp187
+I277
+s(VGrocery Store
+p188
+I01
+g53
+tp189
+I281
+s(VHot Spring
+p190
+I01
+S'MALE'
+p191
+tp192
+I375
+s(VPerfume Shop
+p193
+I01
+g61
+tp194
+I40
+s(VPublic Art
+p195
+I01
+g191
+tp196
+I351
+s(VIce Cream Shop
+p197
+I01
+g36
+tp198
+I18
+s(VAsian Restaurant
+p199
+I01
+g25
+tp200
+I194
+s(VPlayground
+p201
+I01
+g56
+tp202
+I341
+s(VMusic Venue
+p203
+I01
+g36
+tp204
+I134
+s(VArcade
+p205
+I01
+g25
+tp206
+I307
+s(VBeach
+p207
+I01
+g61
+tp208
+I199
+s(VChinese Restaurant
+p209
+I01
+g53
+tp210
+I282
+s(VSoccer Stadium
+p211
+I01
+g25
+tp212
+I399
+s(VBed & Breakfast
+p213
+I01
+g50
+tp214
+I294
+s(VFlea Market
+p215
+I01
+g25
+tp216
+I308
+s(VFootball Stadium
+p217
+I01
+g44
+tp218
+I450
+s(VFraternity House
+p219
+I01
+g22
+tp220
+I73
+s(VLawyer
+p221
+I01
+g56
+tp222
+I30
+s(VCajun / Creole Restaurant
+p223
+I01
+S'MALE'
+p224
+tp225
+I489
+s(VMilitary Base
+p226
+I01
+g56
+tp227
+I376
+s(VDentist's Office
+p228
+I01
+g36
+tp229
+I64
+s(VHarbor / Marina
+p230
+I01
+g56
+tp231
+I340
+s(VScenic Lookout
+p232
+I01
+g61
+tp233
+I47
+s(VAmerican Restaurant
+p234
+I01
+g36
+tp235
+I51
+s(VTrail
+p236
+I01
+g56
+tp237
+I292
+s(VBreakfast Spot
+p238
+I01
+g61
+tp239
+I113
+s(VArt Museum
+p240
+I01
+g64
+tp241
+I230
+s(VArt Gallery
+p242
+I01
+g159
+tp243
+I175
+s(VMarket
+p244
+I01
+g50
+tp245
+I166
+s(VLighthouse
+p246
+I01
+g15
+tp247
+I461
+s(VOptical Shop
+p248
+I01
+g94
+tp249
+I448
+s(VBurrito Place
+p250
+I01
+g36
+tp251
+I148
+s(VCollege Stadium
+p252
+I01
+g94
+tp253
+I314
+s(VDistribution Center
+p254
+I01
+g56
+tp255
+I384
+s(VBoat or Ferry
+p256
+I01
+g28
+tp257
+I372
+s(VMusic Festival
+p258
+I01
+S'FEMALE'
+p259
+tp260
+I164
+s(VDonut Shop
+p261
+I01
+S'FEMALE'
+p262
+tp263
+I346
+s(VBurger Joint
+p264
+I01
+g61
+tp265
+I135
+s(VES
+p266
+I01
+S'FEMALE'
+p267
+tp268
+I225
+s(S'time_of_day6'
+p269
+I01
+g28
+tp270
+I21
+s(VAR
+p271
+I01
+g50
+tp272
+I189
+s(VSculpture Garden
+p273
+I01
+g73
+tp274
+I492
+s(VIrish Pub
+p275
+I01
+g28
+tp276
+I389
+s(VBagel Shop
+p277
+I01
+g28
+tp278
+I371
+s(VHalal Restaurant
+p279
+I01
+S'MALE'
+p280
+tp281
+I427
+s(VFrench Restaurant
+p282
+I01
+g16
+tp283
+I6
+s(VLounge
+p284
+I01
+g25
+tp285
+I193
+s(VBakery
+p286
+I01
+g31
+tp287
+I402
+s(VBookstore
+p288
+I01
+g146
+tp289
+I429
+s(VTaco Place
+p290
+I01
+g16
+tp291
+I141
+s(VIT
+p292
+I01
+g101
+tp293
+I156
+s(VShoe Store
+p294
+I01
+g15
+tp295
+I475
+s(VCapitol Building
+p296
+I01
+g28
+tp297
+I344
+s(VBaseball Stadium
+p298
+I01
+g61
+tp299
+I208
+s(VTennis Court
+p300
+I01
+g94
+tp301
+I95
+s(VBA
+p302
+I01
+g25
+tp303
+I79
+s(VHostel
+p304
+I01
+g47
+tp305
+I172
+s(VMoving Target
+p306
+I01
+g64
+tp307
+I423
+s(VNL
+p308
+I01
+S'MALE'
+p309
+tp310
+I451
+s(VDesign Studio
+p311
+I01
+g64
+tp312
+I68
+s(VCollege History Building
+p313
+I01
+g56
+tp314
+I500
+s(VDE
+p315
+I01
+g25
+tp316
+I25
+s(VFinancial or Legal Service
+p317
+I01
+g28
+tp318
+I457
+s(VCollege Track
+p319
+I01
+g22
+tp320
+I75
+s(VIndie Movie Theater
+p321
+I01
+g61
+tp322
+I145
+s(VAthletics & Sports
+p323
+I01
+g94
+tp324
+I379
+s(VEvent Space
+p325
+I01
+g16
+tp326
+I96
+s(VBike Shop
+p327
+I01
+g25
+tp328
+I269
+s(VCreperie
+p329
+I01
+g262
+tp330
+I303
+s(VJapanese Restaurant
+p331
+I01
+g101
+tp332
+I151
+s(VOutdoors & Recreation
+p333
+I01
+g94
+tp334
+I479
+s(VBotanical Garden
+p335
+I01
+g25
+tp336
+I383
+s(VSG
+p337
+I01
+g280
+tp338
+I426
+s(VAirport Lounge
+p339
+I01
+g146
+tp340
+I462
+s(VFarm
+p341
+I01
+g15
+tp342
+I442
+s(VCollege Lab
+p343
+I01
+g36
+tp344
+I133
+s(VNational Park
+p345
+I01
+g56
+tp346
+I484
+s(VMattress Store
+p347
+I01
+g146
+tp348
+I398
+s(VRock Club
+p349
+I01
+g56
+tp350
+I364
+s(VCollege Auditorium
+p351
+I01
+g36
+tp352
+I72
+s(VPlane
+p353
+I01
+g25
+tp354
+I77
+s(VCollege Academic Building
+p355
+I01
+g159
+tp356
+I10
+s(VIS
+p357
+I01
+g31
+tp358
+I391
+s(VMall
+p359
+I01
+g25
+tp360
+I81
+s(VVideo Game Store
+p361
+I01
+g47
+tp362
+I206
+s(VPlayground
+p363
+I01
+g262
+tp364
+I354
+s(VCoworking Space
+p365
+I01
+g36
+tp366
+I57
+s(VMusic Store
+p367
+I01
+g146
+tp368
+I430
+s(VGas Station / Garage
+p369
+I01
+g28
+tp370
+I380
+s(VElectronics Store
+p371
+I01
+g101
+tp372
+I157
+s(VOther Great Outdoors
+p373
+I01
+g61
+tp374
+I161
+s(VMexican Restaurant
+p375
+I01
+g36
+tp376
+I149
+s(VThai Restaurant
+p377
+I01
+g61
+tp378
+I106
+s(VStreet Food Gathering
+p379
+I01
+g61
+tp380
+I174
+s(VNeighborhood
+p381
+I01
+g50
+tp382
+I169
+s(VDog Run
+p383
+I01
+g64
+tp384
+I229
+s(VCity
+p385
+I01
+g61
+tp386
+I345
+s(VGym
+p387
+I01
+g22
+tp388
+I67
+s(VAirport Terminal
+p389
+I01
+g36
+tp390
+I59
+s(VState
+p391
+I01
+g25
+tp392
+I261
+s(VCollege Technology Building
+p393
+I01
+g56
+tp394
+I499
+s(S'time_of_day3'
+p395
+I01
+g61
+tp396
+I124
+s(VGastropub
+p397
+I01
+g16
+tp398
+I4
+s(S'time_of_day5'
+p399
+I01
+g47
+tp400
+I70
+s(VConvention Center
+p401
+I01
+g16
+tp402
+I160
+s(VCollege Library
+p403
+I01
+g56
+tp404
+I366
+s(VFast Food Restaurant
+p405
+I01
+S'MALE'
+p406
+tp407
+I187
+s(VJuice Bar
+p408
+I01
+g61
+tp409
+I103
+s(VVoting Booth
+p410
+I01
+S'MALE'
+p411
+tp412
+I76
+s(VElementary School
+p413
+I01
+g16
+tp414
+I422
+s(VThrift / Vintage Store
+p415
+I01
+g64
+tp416
+I387
+s(VAfrican Restaurant
+p417
+I01
+g39
+tp418
+I443
+s(VSnack Place
+p419
+I01
+g25
+tp420
+I356
+s(VScience Museum
+p421
+I01
+g25
+tp422
+I305
+s(VBus Line
+p423
+I01
+g25
+tp424
+I242
+s(VPlaza
+p425
+I01
+g64
+tp426
+I334
+s(VHot Dog Joint
+p427
+I01
+g64
+tp428
+I285
+s(VSurf Spot
+p429
+I01
+g61
+tp430
+I201
+s(VField
+p431
+I01
+g15
+tp432
+I36
+s(VGeneral Travel
+p433
+I01
+g64
+tp434
+I267
+s(VCollege Engineering Building
+p435
+I01
+g36
+tp436
+I55
+s(VEastern European Restaurant
+p437
+I01
+g25
+tp438
+I244
+s(VHospital
+p439
+I01
+g25
+tp440
+I82
+s(VUniversity
+p441
+I01
+g16
+tp442
+I97
+s(VFast Food Restaurant
+p443
+I01
+g16
+tp444
+I413
+s(VIS
+p445
+I01
+g191
+tp446
+I374
+s(VIndie Theater
+p447
+I01
+g36
+tp448
+I167
+s(VSki Area
+p449
+I01
+g166
+tp450
+I139
+s(VBasketball Stadium
+p451
+I01
+g61
+tp452
+I243
+s(VHome (private)
+p453
+I01
+g22
+tp454
+I65
+s(VFestival
+p455
+I01
+g64
+tp456
+I419
+s(VConference
+p457
+I01
+g94
+tp458
+I480
+s(VBeach Bar
+p459
+I01
+g25
+tp460
+I390
+s(VCaribbean Restaurant
+p461
+I01
+S'FEMALE'
+p462
+tp463
+I258
+s(S'time_of_day2'
+p464
+I01
+g31
+tp465
+I38
+s(VWinery
+p466
+I01
+g31
+tp467
+I369
+s(VDessert Shop
+p468
+I01
+g25
+tp469
+I182
+s(VPizza Place
+p470
+I01
+g56
+tp471
+I297
+s(VWhisky Bar
+p472
+I01
+g64
+tp473
+I268
+s(VWomen's Store
+p474
+I01
+g146
+tp475
+I460
+s(VOther Nightlife
+p476
+I01
+g56
+tp477
+I315
+s(VSporting Goods Shop
+p478
+I01
+g146
+tp479
+I438
+s(VResidential Building (Apartment / Condo)
+p480
+I01
+g61
+tp481
+I98
+s(VBus Station
+p482
+I01
+g56
+tp483
+I485
+s(VCollege Cafeteria
+p484
+I01
+g28
+tp485
+I434
+s(VItalian Restaurant
+p486
+I01
+S'FEMALE'
+p487
+tp488
+I224
+s(VSalon / Barbershop
+p489
+I01
+g61
+tp490
+I41
+s(VKaraoke Bar
+p491
+I01
+g61
+tp492
+I203
+s(VSouthern / Soul Food Restaurant
+p493
+I01
+g61
+tp494
+I361
+s(VVineyard
+p495
+I01
+g28
+tp496
+I454
+s(VBR
+p497
+I01
+g50
+tp498
+I241
+s(VHotel
+p499
+I01
+g47
+tp500
+I171
+s(VPub
+p501
+I01
+g267
+tp502
+I234
+s(VLight Rail
+p503
+I01
+g36
+tp504
+I153
+s(VSandwich Place
+p505
+I01
+g61
+tp506
+I126
+s(S'time_of_day2'
+p507
+I01
+g36
+tp508
+I54
+s(VVietnamese Restaurant
+p509
+I01
+g64
+tp510
+I228
+s(VEmergency Room
+p511
+I01
+g47
+tp512
+I250
+s(VRestaurant
+p513
+I01
+g36
+tp514
+I177
+s(VCarpet Store
+p515
+I01
+g36
+tp516
+I61
+s(VOffice
+p517
+I01
+g56
+tp518
+I24
+s(VSpanish Restaurant
+p519
+I01
+g73
+tp520
+I464
+s(VHistory Museum
+p521
+I01
+g25
+tp522
+I306
+s(VCH
+p523
+I01
+g159
+tp524
+I12
+s(VCO
+p525
+I01
+g462
+tp526
+I255
+s(VSports Bar
+p527
+I01
+g61
+tp528
+I123
+s(VJazz Club
+p529
+I01
+g39
+tp530
+I400
+s(VHospital
+p531
+I01
+g47
+tp532
+I69
+s(VNightclub
+p533
+I01
+g25
+tp534
+I218
+s(VUS
+p535
+I01
+g15
+tp536
+I2
+s(VMX
+p537
+I01
+g31
+tp538
+I360
+s(VHotel
+p539
+I01
+g159
+tp540
+I179
+s(VMiscellaneous Shop
+p541
+I01
+g31
+tp542
+I239
+s(VSurf Spot
+p543
+I01
+g56
+tp544
+I343
+s(VDim Sum Restaurant
+p545
+I01
+g56
+tp546
+I490
+s(VMiddle Eastern Restaurant
+p547
+I01
+g25
+tp548
+I456
+s(VMonument / Landmark
+p549
+I01
+g25
+tp550
+I219
+s(VStreet Fair
+p551
+I01
+g64
+tp552
+I420
+s(VCollege Classroom
+p553
+I01
+g47
+tp554
+I80
+s(VRecord Shop
+p555
+I01
+g61
+tp556
+I159
+s(VJuice Bar
+p557
+I01
+g36
+tp558
+I17
+s(VDive Bar
+p559
+I01
+g31
+tp560
+I368
+s(VSki Lodge
+p561
+I01
+g94
+tp562
+I488
+s(VHigh School
+p563
+I01
+g56
+tp564
+I359
+s(VCollege Administrative Building
+p565
+I01
+g36
+tp566
+I226
+s(VArt Gallery
+p567
+I01
+g64
+tp568
+I217
+s(VAuditorium
+p569
+I01
+g64
+tp570
+I86
+s(S'time_of_day1'
+p571
+I01
+g16
+tp572
+I5
+s(VPaella Restaurant
+p573
+I01
+g309
+tp574
+I470
+s(VBar
+p575
+I01
+g36
+tp576
+I49
+s(VLake
+p577
+I01
+g25
+tp578
+I222
+s(VElectronics Store
+p579
+I01
+g61
+tp580
+I119
+s(VGastropub
+p581
+I01
+g36
+tp582
+I48
+s(VFrozen Yogurt
+p583
+I01
+g56
+tp584
+I302
+s(VItalian Restaurant
+p585
+I01
+g25
+tp586
+I31
+s(VPark
+p587
+I01
+g53
+tp588
+I19
+s(VPortuguese Restaurant
+p589
+I01
+g56
+tp590
+I329
+s(VCommunity College
+p591
+I01
+g36
+tp592
+I16
+s(VFarmers Market
+p593
+I01
+g61
+tp594
+I155
+s(VNeighborhood
+p595
+I01
+g36
+tp596
+I9
+s(VAmerican Restaurant
+p597
+I01
+g16
+tp598
+I3
+s(VDessert Shop
+p599
+I01
+g61
+tp600
+I127
+s(VClothing Store
+p601
+I01
+g61
+tp602
+I110
+s(VMeeting Room
+p603
+I01
+g462
+tp604
+I254
+s(VWinery
+p605
+I01
+g39
+tp606
+I472
+s(VOther Nightlife
+p607
+I01
+g28
+tp608
+I349
+s(VGerman Restaurant
+p609
+I01
+g25
+tp610
+I210
+s(VAirport Terminal
+p611
+I01
+g146
+tp612
+I463
+s(VPrint Shop
+p613
+I01
+g39
+tp614
+I415
+s(VMusic Venue
+p615
+I01
+g28
+tp616
+I20
+s(VPerforming Arts Venue
+p617
+I01
+g259
+tp618
+I43
+s(VFood Truck
+p619
+I01
+g64
+tp620
+I421
+s(VTram
+p621
+I01
+g25
+tp622
+I196
+s(VCounty
+p623
+I01
+g146
+tp624
+I411
+s(VSteakhouse
+p625
+I01
+g56
+tp626
+I286
+s(VCandy Store
+p627
+I01
+g25
+tp628
+I404
+s(VGift Shop
+p629
+I01
+g56
+tp630
+I89
+s(VDK
+p631
+I01
+g25
+tp632
+I249
+s(VSki Area
+p633
+I01
+g61
+tp634
+I260
+s(VSeafood Restaurant
+p635
+I01
+g53
+tp636
+I276
+s(VWarehouse Store
+p637
+I01
+S'MALE'
+p638
+tp639
+I324
+s(VRoof Deck
+p640
+I01
+g31
+tp641
+I367
+s(VKorean Restaurant
+p642
+I01
+g64
+tp643
+I263
+s(VSupermarket
+p644
+I01
+g31
+tp645
+I392
+s(VAsian Restaurant
+p646
+I01
+g61
+tp647
+I107
+s(VAirport Gate
+p648
+I01
+g25
+tp649
+I84
+s(VSouth American Restaurant
+p650
+I01
+g50
+tp651
+I328
+s(VFood & Drink Shop
+p652
+I01
+g31
+tp653
+I237
+s(VGun Shop
+p654
+I01
+g31
+tp655
+I181
+s(VCycle Studio
+p656
+I01
+g31
+tp657
+I350
+s(VGym / Fitness Center
+p658
+I01
+g36
+tp659
+I53
+s(VGeneral Travel
+p660
+I01
+g53
+tp661
+I87
+s(VEvent Space
+p662
+I01
+g166
+tp663
+I115
+s(VBaseball Stadium
+p664
+I01
+S'MALE'
+p665
+tp666
+I437
+s(VBrewery
+p667
+I01
+g61
+tp668
+I122
+s(VSpa
+p669
+I01
+g31
+tp670
+I278
+s(VCoffee Shop
+p671
+I01
+g61
+tp672
+I102
+s(VRest Area
+p673
+I01
+g56
+tp674
+I298
+s(VMediterranean Restaurant
+p675
+I01
+g22
+tp676
+I198
+s(VBakery
+p677
+I01
+g56
+tp678
+I289
+s(VResort
+p679
+I01
+g56
+tp680
+I320
+s(VTech Startup
+p681
+I01
+g25
+tp682
+I26
+s(VTaco Place
+p683
+I01
+g36
+tp684
+I147
+s(VMuseum
+p685
+I01
+g15
+tp686
+I496
+s(VBridge
+p687
+I01
+g36
+tp688
+I184
+s(VBus Stop
+p689
+I01
+g25
+tp690
+I287
+s(VNail Salon
+p691
+I01
+g61
+tp692
+I114
+s(VLounge
+p693
+I01
+g61
+tp694
+I112
+s(VDonut Shop
+p695
+I01
+g309
+tp696
+I466
+s(VCollege Arts Building
+p697
+I01
+g36
+tp698
+I14
+s(VBeer Garden
+p699
+I01
+g61
+tp700
+I117
+s(VScenic Lookout
+p701
+I01
+g191
+tp702
+I262
+s(VCollege Stadium
+p703
+I01
+g665
+tp704
+I440
+s(VLatin American Restaurant
+p705
+I01
+g462
+tp706
+I257
+s(VStadium
+p707
+I01
+g22
+tp708
+I271
+s(VOther Repair Shop
+p709
+I01
+g61
+tp710
+I118
+s(VCity
+p711
+I01
+g36
+tp712
+I8
+s(VMarket
+p713
+I01
+g53
+tp714
+I280
+s(VGeneral College & University
+p715
+I01
+g36
+tp716
+I132
+s(VBoat or Ferry
+p717
+I01
+g56
+tp718
+I325
+s(VGas Station / Garage
+p719
+I01
+g36
+tp720
+I136
+s(VCoworking Space
+p721
+I01
+g462
+tp722
+I256
+s(VFurniture / Home Store
+p723
+I01
+S'MALE'
+p724
+tp725
+I272
+s(VGift Shop
+p726
+I01
+g146
+tp727
+I396
+s(VKaraoke Bar
+p728
+I01
+g56
+tp729
+I291
+s(VOther Great Outdoors
+p730
+I01
+g56
+tp731
+I342
+s(VTrail
+p732
+I01
+g94
+tp733
+I401
+s(VKorean Restaurant
+p734
+I01
+g25
+tp735
+I355
+s(VLibrary
+p736
+I01
+g56
+tp737
+I365
+s(VJewelry Store
+p738
+I01
+g56
+tp739
+I22
+s(VCostume Shop
+p740
+I01
+g64
+tp741
+I231
+s(VFlower Shop
+p742
+I01
+g15
+tp743
+I452
+s(VPool
+p744
+I01
+g61
+tp745
+I192
+s(VDrugstore / Pharmacy
+p746
+I01
+g36
+tp747
+I143
+s(VAirport
+p748
+I01
+g22
+tp749
+I213
+s(VPerforming Arts Venue
+p750
+I01
+g36
+tp751
+I15
+s(VOrganic Grocery
+p752
+I01
+g31
+tp753
+I393
+s(VHockey Arena
+p754
+I01
+g487
+tp755
+I468
+s(VJapanese Restaurant
+p756
+I01
+g61
+tp757
+I128
+s(VClothing Store
+p758
+I01
+g56
+tp759
+I433
+s(VFurniture / Home Store
+p760
+I01
+g487
+tp761
+I248
+s(VComedy Club
+p762
+I01
+g15
+tp763
+I424
+s(VBeer Garden
+p764
+I01
+g25
+tp765
+I252
+s(VCultural Center
+p766
+I01
+S'MALE'
+p767
+tp768
+I467
+s(VSE
+p769
+I01
+g31
+tp770
+I85
+s(VMountain
+p771
+I01
+g166
+tp772
+I138
+s(VGarden
+p773
+I01
+g25
+tp774
+I295
+s(VGB
+p775
+I01
+g31
+tp776
+I273
+s(VPark
+p777
+I01
+g61
+tp778
+I162
+s(VTheater
+p779
+I01
+g36
+tp780
+I168
+s(VCollege Theater
+p781
+I01
+g94
+tp782
+I316
+s(VLake
+p783
+I01
+g61
+tp784
+I163
+s(VDeli / Bodega
+p785
+I01
+g28
+tp786
+I386
+s(VTennis Court
+p787
+I01
+g406
+tp788
+I101
+s(VBistro
+p789
+I01
+g25
+tp790
+I408
+s(VMuseum
+p791
+I01
+g61
+tp792
+I144
+s(VDive Bar
+p793
+I01
+g15
+tp794
+I418
+s(VHardware Store
+p795
+I01
+g36
+tp796
+I62
+s(VCoffee Shop
+p797
+I01
+g25
+tp798
+I211
+s(VFood
+p799
+I01
+g36
+tp800
+I185
+s(VVegetarian / Vegan Restaurant
+p801
+I01
+g61
+tp802
+I104
+s(VFood Court
+p803
+I01
+g56
+tp804
+I469
+s(VCollege Football Field
+p805
+I01
+g665
+tp806
+I439
+s(VStorage Facility
+p807
+I01
+g56
+tp808
+I37
+s(VMediterranean Restaurant
+p809
+I01
+S'FEMALE'
+p810
+tp811
+I335
+s(VCampground
+p812
+I01
+g56
+tp813
+I483
+s(VResort
+p814
+I01
+g61
+tp815
+I323
+s(VBuilding
+p816
+I01
+g64
+tp817
+I74
+s(VSpa
+p818
+I01
+g191
+tp819
+I373
+s(VBrewery
+p820
+I01
+g36
+tp821
+I186
+s(VFalafel Restaurant
+p822
+I01
+g25
+tp823
+I455
+s(VTapas Restaurant
+p824
+I01
+g25
+tp825
+I304
+s(VGay Bar
+p826
+I01
+g64
+tp827
+I233
+s(VChurch
+p828
+I01
+g28
+tp829
+I410
+s(VSupermarket
+p830
+I01
+g56
+tp831
+I339
+s(VAT
+p832
+I01
+g25
+tp833
+I78
+s(VVietnamese Restaurant
+p834
+I01
+g25
+tp835
+I221
+s(VRiver
+p836
+I01
+g25
+tp837
+I66
+s(VConvenience Store
+p838
+I01
+g36
+tp839
+I140
+s(VHotel Bar
+p840
+I01
+g22
+tp841
+I265
+s(VFactory
+p842
+I01
+g56
+tp843
+I23
+s(VSeafood Restaurant
+p844
+I01
+g61
+tp845
+I232
+s(VFlea Market
+p846
+I01
+g61
+tp847
+I108
+s(VGaming Cafe
+p848
+I01
+g64
+tp849
+I284
+s(VBoutique
+p850
+I01
+g94
+tp851
+I447
+s(VDiner
+p852
+I01
+g56
+tp853
+I327
+s(VArgentinian Restaurant
+p854
+I01
+S'MALE'
+p855
+tp856
+I493
+s(VLibrary
+p857
+I01
+g94
+tp858
+I333
+s(VIce Cream Shop
+p859
+I01
+g50
+tp860
+I190
+s(VSporting Goods Shop
+p861
+I01
+g53
+tp862
+I90
+s(VMobile Phone Shop
+p863
+I01
+g56
+tp864
+I321
+s(VFried Chicken Joint
+p865
+I01
+g61
+tp866
+I362
+s(VTrain Station
+p867
+I01
+g61
+tp868
+I142
+s(VBeach
+p869
+I01
+g101
+tp870
+I120
+s(VHistoric Site
+p871
+I01
+g53
+tp872
+I322
+s(VButcher
+p873
+I01
+g73
+tp874
+I476
+s(VCaf?\ufffd
+p875
+I01
+g25
+tp876
+I83
+s(VBus Station
+p877
+I01
+g64
+tp878
+I310
+s(VGaming Cafe
+p879
+I01
+g39
+tp880
+I407
+s(VOther Event
+p881
+I01
+g94
+tp882
+I481
+s(VTheme Park
+p883
+I01
+g25
+tp884
+I202
+s(VRoad
+p885
+I01
+g56
+tp886
+I319
+s(VCA
+p887
+I01
+g146
+tp888
+I394
+s(VStadium
+p889
+I01
+g259
+tp890
+I44
+s(VMultiplex
+p891
+I01
+g146
+tp892
+I449
+s(VPizza Place
+p893
+I01
+g487
+tp894
+I223
+s(VParking
+p895
+I01
+g36
+tp896
+I71
+s(VWine Bar
+p897
+I01
+g25
+tp898
+I357
+s(VBBQ Joint
+p899
+I01
+g36
+tp900
+I50
+s(VBasketball Stadium
+p901
+I01
+g22
+tp902
+I270
+s(VES
+p903
+I01
+g191
+tp904
+I32
+s(VTennis
+p905
+I01
+g31
+tp906
+I395
+s(VTech Startup
+p907
+I01
+g50
+tp908
+I58
+s(VBar
+p909
+I01
+g61
+tp910
+I121
+s(VDim Sum Restaurant
+p911
+I01
+g31
+tp912
+I388
+s(VMiscellaneous Shop
+p913
+I01
+g56
+tp914
+I337
+s(VBridge
+p915
+I01
+g61
+tp916
+I46
+s(VUniversity
+p917
+I01
+g159
+tp918
+I11
+s(VCollege Classroom
+p919
+I01
+g36
+tp920
+I146
+s(VWine Shop
+p921
+I01
+g39
+tp922
+I471
+s(VLaundry Service
+p923
+I01
+g56
+tp924
+I93
+s(S'time_of_day4'
+p925
+I01
+g16
+tp926
+I100
+s(VMonument / Landmark
+p927
+I01
+g61
+tp928
+I130
+s(VUS
+p929
+I01
+g16
+tp930
+I7
+s(VNightclub
+p931
+I01
+g64
+tp932
+I220
+s(VConference Room
+p933
+I01
+g61
+tp934
+I348
+s(VGreek Restaurant
+p935
+I01
+g28
+tp936
+I382
+s(VBank
+p937
+I01
+g56
+tp938
+I94
+s(VGeneral Entertainment
+p939
+I01
+g259
+tp940
+I45
+s(VCH
+p941
+I01
+g31
+tp942
+I238
+s(VGovernment Building
+p943
+I01
+g56
+tp944
+I385
+s(VDepartment Store
+p945
+I01
+g56
+tp946
+I431
+s(VRS
+p947
+I01
+g25
+tp948
+I214
+s(VFish & Chips Shop
+p949
+I01
+g309
+tp950
+I459
+s(VHousing Development
+p951
+I01
+g56
+tp952
+I28
+s(VPub
+p953
+I01
+g25
+tp954
+I245
+s(VOffice
+p955
+I01
+g64
+tp956
+I92
+s(VRestaurant
+p957
+I01
+g50
+tp958
+I240
+s(VFood & Drink Shop
+p959
+I01
+g56
+tp960
+I338
+s(VEmergency Room
+p961
+I01
+g15
+tp962
+I1
+s(VToy / Game Store
+p963
+I01
+g64
+tp964
+I283
+s(VMovie Theater
+p965
+I01
+g47
+tp966
+I188
+s(VConvention Center
+p967
+I01
+g191
+tp968
+I275
+s(S'time_of_day3'
+p969
+I01
+g159
+tp970
+I178
+s(VNew American Restaurant
+p971
+I01
+g39
+tp972
+I405
+s(VTea Room
+p973
+I01
+g262
+tp974
+I477
+s(VMexican Restaurant
+p975
+I01
+g61
+tp976
+I125
+s(VSteakhouse
+p977
+I01
+g94
+tp978
+I482
+s(VTheme Park
+p979
+I01
+g61
+tp980
+I200
+s(VTravel Lounge
+p981
+I01
+g36
+tp982
+I137
+s(VDoner Restaurant
+p983
+I01
+g25
+tp984
+I204
+s(VCasino
+p985
+I01
+g166
+tp986
+I116
+s(VThai Restaurant
+p987
+I01
+g25
+tp988
+I312
+s(VFarmers Market
+p989
+I01
+g56
+tp990
+I290
+s(VMall
+p991
+I01
+g50
+tp992
+I165
+s(VCocktail Bar
+p993
+I01
+g61
+tp994
+I111
+s(VTrain Station
+p995
+I01
+g56
+tp996
+I331
+s(VPiano Bar
+p997
+I01
+g56
+tp998
+I318
+s(VPlane
+p999
+I01
+g16
+tp1000
+I105
+s(VBowling Alley
+p1001
+I01
+g64
+tp1002
+I436
+s(VMeeting Room
+p1003
+I01
+g56
+tp1004
+I317
+s(VCollege Residence Hall
+p1005
+I01
+g15
+tp1006
+I444
+s(VConcert Hall
+p1007
+I01
+g22
+tp1008
+I246
+s(VMedical Center
+p1009
+I01
+g56
+tp1010
+I377
+s(VAirport Lounge
+p1011
+I01
+g56
+tp1012
+I445
+s(VHistoric Site
+p1013
+I01
+g61
+tp1014
+I131
+s(VRock Club
+p1015
+I01
+g61
+tp1016
+I158
+s(VStudent Center
+p1017
+I01
+g28
+tp1018
+I435
+s(VArts & Crafts Store
+p1019
+I01
+g146
+tp1020
+I397
+s(VArgentinian Restaurant
+p1021
+I01
+g50
+tp1022
+I288
+s(S'time_of_day1'
+p1023
+I01
+g25
+tp1024
+I27
+s(VCosmetics Shop
+p1025
+I01
+g61
+tp1026
+I42
+s(VArts & Crafts Store
+p1027
+I01
+g56
+tp1028
+I296
+s(VIndie Theater
+p1029
+I01
+g61
+tp1030
+I235
+s(VSculpture Garden
+p1031
+I01
+g61
+tp1032
+I183
+s(VGeneral Entertainment
+p1033
+I01
+g191
+tp1034
+I33
+s(VSpeakeasy
+p1035
+I01
+g61
+tp1036
+I409
+s(VHome (private)
+p1037
+I01
+g31
+tp1038
+I39
+s(VGovernment Building
+p1039
+I01
+g28
+tp1040
+I347
+s(VPhotography Lab
+p1041
+I01
+g159
+tp1042
+I176
+s(VTea Room
+p1043
+I01
+g25
+tp1044
+I212
+s(VAdvertising Agency
+p1045
+I01
+g64
+tp1046
+I313
+s(VChinese Restaurant
+p1047
+I01
+g47
+tp1048
+I497
+s(VBus Line
+p1049
+I01
+g64
+tp1050
+I309
+s(VPlaza
+p1051
+I01
+g25
+tp1052
+I195
+s(VChocolate Shop
+p1053
+I01
+g25
+tp1054
+I403
+s(S'time_of_day4'
+p1055
+I01
+g36
+tp1056
+I56
+s(VBookstore
+p1057
+I01
+g56
+tp1058
+I478
+ssbsS'_weights'
+p1059
+cnumpy.core.multiarray
+_reconstruct
+p1060
+(cnumpy
+ndarray
+p1061
+(I0
+tp1062
+S'b'
+p1063
+tp1064
+Rp1065
+(I1
+(I501
+tp1066
+cnumpy
+dtype
+p1067
+(S'f8'
+p1068
+I0
+I1
+tp1069
+Rp1070
+(I3
+S'<'
+p1071
+NNNI-1
+I-1
+I0
+tp1072
+bI00
+S'2\xd7QV\xa1\x12\xc4?\xec4\xc6\xa5\x1eK\xf1?6\xca\xe0\x8c\x981\xa0?~G\xcb\xca\x9d\xd7\xd8\xbf\xb9\xdbBs\x16\x18\xd4\xbf0R\xab\xdc\x17\x90\xca\xbf\x12\x10\xbf\xd4\xe0\n\xf0?Ca\xe9\x04\xa6T\x9f\xbfBd\x8e\x16@s\x92\xbf\x92k:\xf8\x84\x8e\xb6?q\x91;\xb7g\xf5\x06@\xfbf^\xd8\xff\xbf\xc2?{9\xf4P\xfc\xa4\xcf?\xdcY\xa1\xfe\xa2w\xc0?\x918\x1b\x1c\x80\x82\xee?M\x7f\xcc\xc5ig\xd6?\x120\x1a$bo\x03@\xf76h\xfe\xba#\xdf?\xf2\x83a\xe5\xb5\xad\xcf?\x06g\xe8A\xa5\x1e\xcc??\xb5\t\xa4\xad\xe7\xd9?1\x0c\x1d\xfft\x07\xd0\xbf\xe3\x11W\xe6\xbe\xc2\xfc?\xe3\x11W\xe6\xbe\xc2\xfc?\x0c\xfa\\\x9b\x00\xda\xcc\xbf$+\xff5\xeas\xd8?\x9c$\xd0\xeb\xa1&A\xbf\xae\xc2)W\x06$\xc3?p\xe79!\x8e)\x08@\xfe(\x85\x0b\xb5\xa6\xfe?\xee\xbd+\x82\xc5\x0f\x08@T\x9f\xe4\xbd/5\x91\xbf\x93Bd\x8di\x81\xe0?/c\xf9Qq\x05\xd9\xbf?\\\xe6\x87?\xd8\xde?s\x80\xd6\xe2\xbe5\x08@1\x0fs\xcf\xd2\xc0\xf3?s\x80\xd6\xe2\xbe5\x08@\xcb\xaeUX|\x15\xbc\xbf\x12!*\x1e\x9c\x1b\xc1?&\x94\xa2p\xca\xbf\xfe?j\x07\x9d\xf2E<\xb1?"\xc81\xa54C\xd7?\x1c\xb9aS\xa4P\xec\xbf\x84\x18\xf5e\x0f\xf7\xd2\xbf9\xe9\xc7`I\x18\xde?\xb4w\xbc\xc7\xcf\x1b\x00\xc0\x81[\x06\x15\x0bY\xe2?\xde\xa4\x10\x8f9\x94\xcc?\x17\xd8\x81@4j\xd2\xbf\xe5\xda\xd3n\xd9{\xdc?\x93\x08q\xd8\xea,\xd4?\xb0?\xa0\x11\x8f\xa1\xaa\xbf\xfc2\x04\x1f\xae\xe8\xc9?W\xf2\xf5\xd44\x13\xb7?\xa1`\xe8f\xde\xd1\x07@\x86/4\xd4!x\xdf?\xe8\xde\x99\xee\xf0\x0c\xe0?\x1c\xa6NS\r\x90\xe5?\x04;"\xc1[\x84\xf0?\xd1P\x01F\xfb\x18\xdb?\xe00\r\xc2\xc8>\xef?\xf5\x96\xafS\xb9"\xfe?\xbb\x82\xe3\xd7j2\xd3?\x8db-uy\x0b\x08@\xb44\xbe#\x91\x8d\xb0\xbf\xc9\x88\xc0\xe7\xc5\xfa\xdc?`d+gz\xc4\xfb?\x9b\x07\xe9\xeb\x04\xa6\x0c@\xf4\xe2\xdb\x9a\xdc\xd6\xf2?\xc3\x86\xdc\xacc\xe7\xc9\xbfL\x16Q\xe4\xd6\xf5\x03@\xc0\x0cd\x85\xfb\xaf\x04@\x7f\x91ka\x8e\x94\x08@[L\xd9\xfa\xf5R\xf0\xbf\x7f\x91ka\x8e\x94\x08@s\x80\xd6\xe2\xbe5\x08@V"\xd6]\x88\xaa\xcc?PR6\xc8\xaa9\x0e@\xe3\x00\xcb)\xe5,\r@\xca\xd7\xea\xef\xb1\xce\xe8\xbfo\xbc\xf3\xe24\xa3\xcb?$\xc9\x82\xce\x0b\x08\xf6\xbf\xd4A\xb2*\x83\x05\xd2\xbf\xbc\xd8\xab/G\xf7\xf4?t$\xdc\x02\xf4\xa1\x05@}\xa4\xa1R\x81\xbd\x0c@\x9b\x84\xb6\xae\xe6\xe4\xe1\xbf/>\x80\xbbj\xcc\xfb\xbfm6\x92<\xee\xb5\xc2?\x9d\x92\x8f\x91\xdaP\xda?.\xe1\xb1\xdf\xf8\x07\xe3?.\\\xe1\xb9\xa2\r\xe0?\x8db-uy\x0b\x08@\x94\x8d\xca\xe9\x02\xbf\x04@*P\x00\xc8p\xdd\xee?D\xee6\xb5\xc6\x8f\xea?\xcf\xc6ky]\x06\xd0\xbf\x1d8 9\xbd\xde\xfa\xbf\xb6\xc3\x88\x1d\xdf\xad\xea?\x144\xd4\xb6\xfa\xf9\xe3\xbf\xd1j\x1en\xc4\xfe\xfa\xbf\xdb\x87\x92\xef$\x04\xe8?\x91\xde\xbf\xabp\xfa\xda\xbf\x13\xd0>1\xa8\xa7\x10@2\xa0\x7f\x886\xfe\xdf\xbf\x00\x1dS\xb4~\x0f\xf8?\x9b\x0e\x03N\xc0\xcf\xec?\xe3r\x83\xa9\x1f\xc1\xf5?z\xa0\x92e\xf7\x91\x06\xc0G\rp,42\xf8?\xe9\xc0=\x18\x87\xdf\xef?B\x83\x131~\xbf\xdd?\xdbK\x1a;>/\xb2?\xab\n\xa7\x8b\xaf\x98\x05@\x05K}\xa9s\xef\xe6\xbf\x94?\x9106u\n@\x81\xe9\x0bp\x9a\xd9\xc2?\x1dA\xc5\xcf\xf2\xe9\x08@l\xff.\xc1\x9d\x14}?\x8e\r6\x9e@A\xe4\xbf%3OsW\x8e\xd2?P0\xbd\xb6@\x9d\xca?\x19\xdey\xc3\x06\x96\xde?\x1d\xe8p3+\x9e\xdd\xbf\xed\xb7\xc0\xbf!\xa0\xba\xbf\x80\x93\xe3\x98\x8bd\xc8?\x9bk\xe9\xc7_\xfa\xc2?\x151\x06\xa0p\xb4\xe1\xbf\xdd\x05;L\x9a.\xcf\xbf.y5o\xfc1\xbe?Dq\xed[2;\xdd?\x84\xf9F=\x18\x86\xbe\xbf\x9eD\xfc\x04#\x84\xf7?]\x85*3\xe5\xcc\xe2\xbf\xfc\xd1\xe0\xd5\x10\x1d\xc8?\x92zX\xa2T\xb6\xd7?2\x10M\x05\xd2\xb1\xe1?S\xbe\xe2|+&\xfc\xbf6\x06\xc1G\x1d\xf8\xd9?\xdb\n/\x97\x9c\xcb\xf3?\xb2r\xd3\x1f\x1b/\xf2\xbf\x1f\xc9\xf0\xde\xe8\xcb\xf7?T\xb3%a\xdex\x04@=L\xc5r\xc7\xbd\xe5?\x8cE\xc7\xa1\xf1X\xe4?\xff\x16*qU\xf2\xd7?\xf5\x8a\x07\xeb\x94d\xd3?G\x94)\xf8Z\xda\xf9?\x93\xda\xe2`\x03\x1e\xbd?\xeb\x92\x9dB\x90M\xfd?\xf9}aeG\x82\xd8?y\xe9{g\xbf\xe6\xc2?\x13\x93\x1a\xb5\xb1\xf0\xd8?\xc7\x18\xedD\x16Y\xe0?64Z\xbbr\x19\xa3\xbf\xa9W\xf9$8$\t@\xdc\xf4\x85c\x9bj\x80?!\x8e\x03\x85\xe9~\xd5?\xa1q"\xa0\xcfv\x0c@*\xa4\x16\xb6U\xa8\xe4?\x83+\xda}\x8c+\xe6?p\xadW\xfa\x80}\xe2\xbf\xcb\x13A\xbb\xb4\x9e\xfd?\xcf\xbf\x9e\xa8}\x03\r@T\xa9\xab]\xbe\xdc\xde\xbf\xadLQ]\x8f\\\x8f\xbf\xeb\xdc\xba\xe3\xf5\xa5\xe0?\x0c\xd4\xe5\x11\x87\x9d\xc4\xbf\n\xc3\'\xb4Q\xae\xb9\xbfh\xe9p\xde"\xb0\xac\xbfu\xa0\x99G\x1d\xd3\xee?\xeb\xd7\xea\xd5\xafD\xfa?\xa5\xc3J\x93\x9d\xf6\xd7?\xa4\x04\x162\x1a[\xf3?y\xb9k\x10\xf1g\xd3?\x01\xb9\xdd\xe6\xe4B\x01@\x8e\xb6t:\xe7f\x94\xbfD}K\x07\xdfB\xd1?\x8b\x0b\x10>\xa6\xd5\xfe\xbf/=}\xea?8\xf7\xbf\xcf\xbf\x9e\xa8}\x03\r@\x00}\x8bs\x01\\\xbb\xbf"z\xc6D\xce\xf9\xe8?\x18\x99\xa4\xe3\x95\xc0\xda?\x8a\x1a]\x1alB\x01@X\xa7\x85\x03\xa0\xbd\xc4\xbfR\x97\x15\x9a\xd0\x10\xb6\xbf\x9b\xcdq\x97\x8a\xf3\xee\xbf\xe2Sc\xe3o7\xe3?\x8a^\x1d\xfe\x0f[\xe1\xbf^\xb0S\x8a\x94\x15\xf7\xbf\xa3\xc9\xc2U\xbb\xd6\x02@\\\x9d<\xcf\xb4`\xef\xbf1\x84\xb3b\xeb\x95\xee\xbf\xe6\x84\xec\xb6\x01\x0e\xd6\xbf\xd5\x9b\x1b\xfd\x17T\xdb?\xab5\x9c\x15\x86\x04\xce?3\xbf\xb3x\x13\xcf\xb1?\x1d\x1de\x07\xc6\xcd\xe6?;(H(*w\xfa?\xda\xef\x9f\x84\xa2+\xf1\xbf:V\xdbE\x83\xc0\t\xc0\xa4sr0#a\xc1?E\x03\x08\xb7\x9d\xd5\xdc?\xee\x8aC`\x9eY\xf1?\xae\xc5\xa3sV\r\x03@~\xd0\xe1\x94\x9d\xc9\xf6\xbfY8\x93\xd0a:\xe1?\x073C\x1f\xe0\xec\xd8?\x9d\xbbc\x82\xbc]\xd7?\xb5\xcd\xc0i\xdc\xc5\xe4\xbf\x83\x18\xd9\x11~\x9fv\xbf\xf9d\xce\x03\xc4\xfc\xf6\xbfl\xd3\x89\x8d\xf6\x8b\x12@\xd5>\xd3T\x8d\xfa\xd3?\xc7.#\xaa\xb4\xee\xd6?(2zZ\x16\xf6\xeb\xbfL\xbf\x1e\xbb"\xd3\xea\xbf8K\xec\x93Z\xbd\xb6\xbf\xd5\x1b\xce\xfc\x84\x16\xe4?\xadK\xdb|\x0f*\xf7\xbf\xc6s\xa9y\xddR\xf4\xbf7\x99V*Xc\xb8\xbf\xae\xd6\x16u\x8d\x15\xb5?\x94:\x0fc\x83\xd5\r\xc0\x7f\x91ka\x8e\x94\x08@\xa7\x10Xo\x8f\x03\x05\xc0\xbfZ\x17/\xa3o\x03@\x16\xca\x01e\x9d\xc9\xd9?\xbf\xa0\xa0U\x8c\xe1\x10@;\xaaO\x891\x00\x03@6\xd9#\xb5\xc6\xc9\xe5?\xe1H(\xd1\xa0e\x03@9\xc4\xcd\xa8\xbd~\xeb?\xd7\x7f\x9b\x93\xa9\xbd\xf3\xbf\xebl\xe7~]"\xd9?\xfc.*\x95\xb5z\xe9?j|o\x102\xac\xca\xbf$;\xb9\xba\x8c\xe7\xd8?R\xed\x9cY\xba\xfd\xaf?.\xe1\xdf\xb6j\xea\x01@+L\xbcx\xa2\xd2\n\xc0}\xc4![&T\xe5?\xbeN<\xf4\xea\x7f\x03@.TH\x06\t\xa4\xf7\xbf-\t\x90\xf8\x08\xf5\xd9\xbf\xa8\x97\xe5\x84\xa3C\xfb\xbfU\x08\x97\xb2[\xa9\xd4\xbf\x89\xc1\xcd\xed\xb1\xd2\r@\xa9Rg\x05D@\xf7\xbf\xa5\x8b\x9b\xb5g\xd6\x06@\x89\xe2|\xd7\tA\xc1\xbf\xeb|nB\x9e\xbd\xdd?\x01\x0e\xbc\xe93\x02\xfa\xbfX{\xb5\x91\xffa\x13@\x08\xa6\x96\xe3\xfe\x91\xfe\xbf\x05%\xa5gX@\xfa?\xb4\xc0{\xfe\x0f\x12\xf0?\xfb\xe4\xaa\x7f\xf0O \xc0\xd8@\xf1m\x19\xae\xd4\xbf\xc57n\xe1\x7fv\xd5?\xb4\xed\x1c\xb9\x97\xa2\xe6\xbf.\xa3G\x075q\xfa?lm3V\xfe\xe7\xe7\xbfo\xf2\xca_b\xd1\xf1?\xca\xce\x8b\x12V\x03\x05@Nu\xee9jG\xe6?\x8aF Q\xf5\x95\x05@\xb4\nH~\x8c\x8f\xdd?\x000\xc4\xfb\xa8\xfd\x00\xc0:\xb2\xc8\xeb\xb1\xe6\xd5?todX\x16\x16\xd3?\xca\xecU\xd8\xc7\xba\xd3\xbf\xcc\xb9\x97\xad\x0b\x1c\xf1?a\x87\x8ee\x0f\xa4\xe0\xbf\x1f\x02\xeb\xf8\xddw\xeb\xbfD\xc0\x02\n\xe0\x80\xd6\xbf\x80\x0c\xe2\x9dS\x10\xc1\xbfLe\xd8\xf2\xc4\xfd\xb3\xbf\x98\x94\\uc>\x96?\x9c\xdd\x8cX\xf3z\x00@\x03\x85-\xd7\xc0t\xe9?\xf7!@\xb6\x8fD\x12@\xf8\xc60\xc6\x86\x8e\xf3\xbfG\x9c&\x10C\x92\xf7?\x07\x1c\x97\xd7*\xf6\xd4?\xeag{\xf7x\xdc\xd4?\xe3\x0c\x8e\x9dQ\x82\xd6?\xb2/\x08\x12.\xef\xdd?\xa1\xc5\x1f\x88z\x84\xb6?\xfd\x82_\xf6\xd8\xcb\xbb\xbf\x97\x92Yx\\\x19\xd7?\xd6\xaeu?\xe7e\x00@\xd7\xf61\xaf\xc9\xf3\xf7?\x99\xac<e\xb9\xa4\xe7?\xb3\x98}\xf8h#\xeb?\x0c\xeb\xdb\x8b\xbc\x9c\xb5?\x1b!\xbc\xd1\xc9X\x06@\x18/\xda\xa6\xcc\xfc\xb2\xbf]\x87I\xbf\x8d0\x0f@\xc9\xf6$\\-\xb6\xfa?M\x0ej\x8f\x9e\x8a\t@\x94A\xae\x03\xc9\xb7\xfd?\xbc\x18d\x96\x9d)\xef\xbf0\xe6H\xb7\xa6*\xfd?\x10\xee\x9d\x05"w\x01\xc0\xe2y\xf3\x1f\xb2o\xe8\xbf\x8a\xc5\xaf\x8e\xe8\x05\xfa\xbfaO|Sc\xa1\xfc?@@\xe4\xf65u\x87\xbf\xacU\xa5\xbdO`\xee\xbf\x86z[\x04\x9b\x94\x04\xc0J|\x8f\xcaw\xd3\x0c@:r/\xf3\x15g\xe7?\x14\xd8+\xafc\xdd\xd5\xbf<\x0e\xbcU\xd9m\x08@)\x12\xf4\xa4\xe50\xf0?\x86\x93\x9c\xcf\\:\xdb?i\xcf\x91{\xcb\x98\x06@1\xb5<\xce\xae4\xe9?\x1e\\\xbf*\xdbC\x06@Ch\xf8\x16\xe2B\xe3\xbfe\xf3f\xb9\xa9\x98\xf5\xbf\x7f\x91ka\x8e\x94\x08@\xa0\xc1\xa6\xdb\xfe\xf3\xf3\xbfX\x7fu\xc4\x87\xe2\x00@?o\xf5<\xfaL\xb4?d\xf1 \xcb\xad\xd6\x02@\xa3\xc6\n\x07\xecP\x04@\xa8\x16\xa9.\xeeo\x11@0\x84\xd6\xa2\xaf<\x0b\xc0\x7fo\xc6\x82A\x11\t@M\x88c\xf4\xafd\xf5?P\rJ\xa1\xc3\xd3\xf9?9\xa7\x08\x19~\xba\xa7\xbf\xaa\xeb\x81X\xea\x06\xb1\xbf\x913\x12\xa4\xed\xe8\xbc\xbfv\x00=\xe7]\x84\xf2\xbf\x05Zs,\x9e\xb2\xdf?\nK\x02*X,\xf2?\xac\x1c\x07\xdf\xcf\xdc\xd1?I\t\x0b\xd2\xc0\x01\xf7\xbf\xb6\x17\xb5>\xb9\x04\xf8?\xcd\xa6\xe9\x97Q\xc9\x08@\xfb\x96\xa5\xf8\x83\x8f\xab?\xa4\x1f(\x9c\xea\xdb\xef?\xdev\xb4u8\xf7\xdf?SIv\xda\xb1\xfc\x07@\xff\n\x1b\xc2Q\xda\xd7?\xe4\x00\xbeC<\xe1\x0c@G)m\xcb\xc4\x1b\xe4?\xa4\xf78\xc4\xc1L\t@2X\xdf\x99OQ\xcf?t\xe1\x1f\xc5\xf3W\xf0\xbf\xc9\x18\xe3\xf76@\x05\xc0Jc\xaf\x15p\xaa\xe1?\x0c"9\x814V\xe5?.\x00\x1ep\xb3\xb0\x05@\x7f\x91ka\x8e\x94\x08@\x02\xb1\xfc\x878n\xfc?\x03\\YpQg\xf3?\x03\\YpQg\xf3?;m\xa6\xcb\xe4/\xf7\xbf\x18\x9b\xa3\x16A\x02\xe4\xbf\x1b@\xfd\xeff\xee\xfe\xbf\xcd\xd7\n\xb8\xab\xa1\x12@%#7L\x0e\xc2\x01@\x02\nS\xfd\x141\xc7\xbfL\xaaR\xd1?\x10\xf2?b#\xcb\x89\xc0\x8d\xe6\xbf\xc3\x89J\xa9\xa6g\x05@\x96\xe8%(\xc2\x12\xe2?\x012\xa23\xe9\x0e\xb9?\xc3e4\xddP\xd7\xd0\xbf`3"\x8b\xc1\xba\x04@\xe26"y\x0f\x9e\x04@\xbb\x80\x06\xf2e\xbd\x00@\xa3\x92\xfe\x11\x9d1\xba\xbff\x8c\x9f\xd2\xad\xf8\xfd?rzv.\tv\x02\xc0\x90|\xa7\xfcf\xbc\xf8?\x1c\x86sA\x0cc\xcb\xbf\xc9\x88\xc0\xe7\xc5\xfa\xdc??x\x8f\xef1\x87\xfb?\xc2\x9f\xdcU\xeb<\xf0\xbf\xc9\xf98\n?\xc1\xbb?\xa1q"\xa0\xcfv\x0c@\x8e2\xd4\xfb-\xa5\xc8\xbf\x13\xa4\x1e\xa4\xfb\xf6\x0b@[I\x81\xd5s\xe4\xd4?^\xb4\xbe\x9a\x03\xce\xd5?C\x93"YT\x07\xfb\xbfP\xbcw\x91\xb5Y\x11@\xc8K\xf1#u\xf4\t@\xa1q"\xa0\xcfv\x0c@9?G>P\xfa\xbd\xbf[\xf3\xb3^\x93T\xed\xbf\x9c\xef\xaf\xc3q\xfc\xf2?\xd0\x9cI!\xcdb\xd6?\x1b\xcfM\x8e\xc6\x86\x10@\xceq\xc1[\xcd\x8f\xf4\xbfK\xa4\x15^\xe9R\xf5\xbf\x89\x8a\xfd#2l\xd1?\x89\x8a\xfd#2l\xd1?\xcc,*\xe4\xec\x03\xd7\xbf\xca\xdf\xd4\xe8\x10\xb4\xed?Tv\x96n\xea6\xf8?\xbb\x00\x92\xa1\xc9#\xea?\x83\xc3\xe8\xdb\xef\x92\xfc?x\xc01P\xb8\xd2\xec?\xd9=6N\xbe\xe2\x00@\xd9=6N\xbe\xe2\x00@B\xa2\xfa\xab~?\xd6?x\xd7\xb4\xc1b\xd3\x00@x\xd7\xb4\xc1b\xd3\x00@b~B\xf2\xf9S\xe9\xbf\xae\x15\xdf\xa3F\xe0\xed?\xca0\xab\x92\xd6M\xe1?\xac4=]\x9e\x89\xf5?\x07\x82\xad\x01"m\xf8?\x07\x82\xad\x01"m\xf8?\xa1q"\xa0\xcfv\x0c@\x03m\xebZ\x17\xab\x0f@\xb3\xef\xd9\x97\x87\xe0\xff?\x04\xb0-\x85\xc5\xae\xea?\x07/\xb0z\xcd\xe5\x07@s\xef\x10*\xc3\x02\xfb?<\x84\xc2nM\x94\xc0?\x86\xa5\x89\xae\xed\xe5\xf3\xbf@?\xde\xd2\xa2+\xfa?*\xd3\xf6\\>O\xe9?<\xdc1\xbf\xcf\xd0\xe7\xbf\x93,\x96\x0b\xddt\xf3\xbf\xf6\xf6\xb2\x81\x89\x88\xe9\xbfo\xc9g\xaa\x95*\x10@{\xefc\x91\x16\x8d\x02@f\xc9/\xb7_[\xf2\xbf\x127Z\x04\xbf4\xec\xbf\xc0\x1b\x15\x03g[\x10@F:\xf4\xb2\xb8$\xf9\xbf\xee*l\xb1\xb8\xd2\xb8\xbfSsC\x02\xa8 \x08@\xb1B\xdb\xeb\x8b\xc6\xf9?\x7f\x91ka\x8e\x94\x08@\x1a\xbd\x8d\x0f\xd6_\xa4\xbf:n\x80\xbd<\x90\xf7?:n\x80\xbd<\x90\xf7?:n\x80\xbd<\x90\xf7?\xe4_\xee\x0f\xbb\x81\x00\xc0K\x9d\x10{e&\t@\xfcq\x9e\xc4\xaa\xa8\x11@|\x91ka\x8e\x94\x08@\x7f#/2\xf2w\x03@l\xff\xda\x9a\xdc6\xf9?9i\x15\xf5\x9f#\xe3?e"e\t\xd8\x08\xd0?\n\x15\x8e\xdd\xb0&\xef?\'K\x17\x16#\x89\xf0\xbf\xdf\x1e\r\xb6!&\xf1?\x10\xd25\xa2\xdd\xb1\xed\xbf?r\\y\x95v\x10@\xb71\x17\xa2TF\xa3?\xd1\xfe(\x0c\x896\x00\xc0\x80\x90\xa6S<_\xee?\x9c\xd9\xb8_0\xdc\xd5\xbfx\x85\x0fT\xbd\xff\xe8\xbf\\F\'\x8d>Q\xd6?\xed\xf2\xa6sx\r\xe2\xbf\xf0@\x9alL\xd0\xe3\xbf\x83\x9d=~\x983\xee?\x80\xf1-\x1f\x07\xaa\x14@\xf4U)X~r\x02\xc0\x05#\xe8o_]\xe9?\xdd\x12 \xd1=\t\xdd?\x7f\x91ka\x8e\x94\x08@\xf6S\'\xec\xd1\xbe\xef?\xdf\x1fc\x05\xed\xdd\xea?{\xc7\xbck\x90_\xf0?\xd4\x1d\xb5\xa0\xbco\t@]0\x92/f\xbb\x00@]0\x92/f\xbb\x00@\xff\x8d:\x97:\xca\xe3\xbf\xa7u!\xef\xce3\xe4\xbf\x86\xbe0T/|\x0e@\x12:$\xac\xc2\x9e\xbd?G6(g?D\xe2?\xeb\x84_\x12\xa7\xe7\xec?cO\xab\x18M\xac\xfc?M\x0ej\x8f\x9e\x8a\t@\xeb\x96\xf6\xb0j[\xcb?\xf6S\'\xec\xd1\xbe\xef?\x08Vj^L\x9b\xe4\xbf\xb8(\rh\xf68\xc0\xbf\xb1q\x8c\xa6\xd8\xe8\xe2?\xb7\xd3\x15\xfd\xcf\x85\xe3?\x88\x01`9\xa79\xf4\xbfcyK\x893\x87\x0e\xc0\xe9\xd1\x89\x10\xbc\xee\xee?pg+\x11\xc9\x18\xfe?l\x13\xe3\xad\xc6*\x02@'
+p1073
+tp1074
+bsb.
