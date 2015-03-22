@@ -161,5 +161,4 @@ def checkin_train_and_predict(train_l, genders, ages, test_l):
     feats = obtain_feats(checkins, _users)
     age_classifier = age_classifier.train(feats[0], max_iter=30)
     gender_classifier = gender_classifier.train(feats[1], max_iter=30)
-    checkin_predict(test_l, classifier=True, classifiers=[age_classifier, gender_classifier])
-
+    return checkin_predict(test_l, classifier=True, classifiers=[age_classifier, gender_classifier])
