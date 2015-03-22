@@ -24,7 +24,7 @@ from sklearn.neural_network import BernoulliRBM
 import skimage.io as io
 import skimage.transform as trans
 
-def predict(userIds):
+def image_predict(userIds):
 	f = open("image_features.bin", "rb")
 	oriData = pickle.load(f)
 	f.close()
@@ -92,7 +92,7 @@ def predict(userIds):
 	return result
 
 
-def train_and_predict(userIds, genders, ages, targets):
+def image_train_and_predict(userIds, genders, ages, targets):
 	f = open("image_features.bin", "rb")
 	oriData = pickle.load(f)
 	f.close()
