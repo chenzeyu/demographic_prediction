@@ -25,6 +25,7 @@ import skimage.io as io
 import skimage.transform as trans
 
 def image_predict(userIds):
+	print "start"
 	f = open("image_features.bin", "rb")
 	oriData = pickle.load(f)
 	f.close()
@@ -33,10 +34,13 @@ def image_predict(userIds):
 	fileMap = pickle.load(f)
 	f.close()
 
-	f - open("image_classifiers.bin", "rb")
+	f = open("image_classifiers.bin", "rb")
 	genderClassifier = pickle.load(f)
 	ageClassifier = pickle.load(f)
 	f.close()
+
+	decomp = RandomizedPCA(n_components = 200)
+	oriData  = decomp.fit_transform(oriData)
 
 	test = []
 	user = []
@@ -51,8 +55,11 @@ def image_predict(userIds):
 	aP = ageClassifier.predict(test)
 
 	result = []
-
+	z = 0
 	for u in userIds:
+		print z
+		z+=1
+
 		male = 0
 		fem = 0
 		a = 0
@@ -78,6 +85,11 @@ def image_predict(userIds):
 					d+=1
 				else:
 					e+=1
+		print male, fem, a, b, c, d, e
+
+		if fem==0 and male==0:
+			result.append(("none", "none"))
+			continue
 
 		if fem > male:
 			gender = "FEMALE"
@@ -88,6 +100,9 @@ def image_predict(userIds):
 		aList.sort()
 		age = aList[4][1]
 		result.append((gender, age))
+
+	print "end"
+	print len(result)
 
 	return result
 

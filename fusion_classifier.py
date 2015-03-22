@@ -25,7 +25,32 @@ import skimage.io as io
 import skimage.transform as trans
 
 from image_classifier_lib import *
+from checkin_classifier import *
 
-def predict(userId):
+def predict(filename):
+	file = open(filename, 'rb')
+	reader = csv.reader(file, 'excel')
+	reader.next()
+	users = []
+	genders = []
+	ages = []
+	for row in reader:
+  		users.append(row[0])
+  		genders.append(row[1])
+  		ages.append(row[2])
+
+  	image_pred = image_predict(users)
+  	# checkin_pred = checkin_predict(users)
+
+  	print image_pred
+  	# print checkin_pred
+
+
 
 def perform_k_fold():
+	print "dummy"
+
+
+
+
+predict("test.csv")
