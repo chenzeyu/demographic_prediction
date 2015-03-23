@@ -39,7 +39,7 @@ def image_predict(userIds):
 	ageClassifier = pickle.load(f)
 	f.close()
 
-	decomp = RandomizedPCA(n_components = 200)
+	decomp = RandomizedPCA(n_components = 25)
 	oriData  = decomp.fit_transform(oriData)
 
 	test = []
@@ -116,7 +116,7 @@ def image_train_and_predict(userIds, genders, ages, targets):
 	g_train = []
 	a_train = []
 
-	decomp = RandomizedPCA(n_components = 200)
+	decomp = RandomizedPCA(n_components = 25)
 	oriData  = decomp.fit_transform(oriData)
 
 	for i in range(0, len(userIds)):
@@ -135,8 +135,8 @@ def image_train_and_predict(userIds, genders, ages, targets):
 	train = np.array(train)
 	test = np.array(test)
 
-	genderClassifier = GradientBoostingClassifier()
-	ageClassifier = GradientBoostingClassifier()
+	genderClassifier = SVC()
+	ageClassifier = SVC()
 
 	genderClassifier.fit(train, g_train)
 	ageClassifier.fit(train, a_train)

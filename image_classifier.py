@@ -17,6 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import cross_validation
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.tree import DecisionTreeClassifier
 
 from sklearn.svm import SVC
 from sklearn.ensemble import GradientBoostingClassifier
@@ -95,16 +96,16 @@ print "Elapsed Time:", end-start
 
 # Do feature selection/extraction(PCA)
 #########################################
-decomp = RandomizedPCA(n_components = 200)
+decomp = RandomizedPCA(n_components = 25)
 train  = decomp.fit_transform(train)
 #########################################
 
 
 # Initialize Classifier(SVC)
 #########################################
-genderClassifier = GradientBoostingClassifier()
-ageClassifier = GradientBoostingClassifier()
-bothClassifier = GradientBoostingClassifier()
+genderClassifier = DecisionTreeClassifier()
+ageClassifier = DecisionTreeClassifier()
+bothClassifier = DecisionTreeClassifier()
 
 end = time.time()
 #########################################

@@ -111,7 +111,7 @@ def train(filename):
 
   compiled_features = np.array(compiled_features)
 
-  fusionClassifier = GradientBoostingClassifier()
+  fusionClassifier = SVC()
   fusionClassifier.fit(compiled_features, compiled_targets)
 
   with open('fusion_classifiers.bin', 'wb') as fp:
@@ -187,7 +187,7 @@ def perform_k_fold(filename):
       compiled_targets.append(g_train[i]+" # "+a_train[i])
 
     print "Training Fusion Classifier"
-    fusionClassifier = GradientBoostingClassifier()
+    fusionClassifier = SVC()
     fusionClassifier.fit(compiled_features, compiled_targets)
 
 
