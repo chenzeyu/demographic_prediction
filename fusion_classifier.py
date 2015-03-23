@@ -29,7 +29,7 @@ from image_classifier_lib import *
 from checkin_classifier import *
 from tweet_classifier import *
 
-def predict(filename):
+def fusion_predict(filename):
   file = open(filename)
   reader = csv.reader(file, 'excel')
   reader.next()
@@ -50,10 +50,14 @@ def predict(filename):
     genders.append(row[1])
     ages.append(row[2])
 
+  print "Starting Image Prediction"
   image_pred = image_predict(users)
+  print "Starting Checkin Prediction"
   checkin_pred = checkin_predict(users)
+  print "Starting Tweet Prediction"
   tweet_pred = tweet_predict(users)
 
+  print "Fusing Results"
   compiled_features = []
   compiled_targets = []
 
@@ -64,7 +68,9 @@ def predict(filename):
     compiled_features.append(dummy)
     compiled_targets.append(genders[i]+" # "+ages[i])
 
+  print "Starting Fusion Prediction"
   pred = fusionClassifier.predict(compiled_features)
+  print "Prediction Done, Report below\n"
   print classification_report(compiled_targets, pred)
 
 
@@ -86,8 +92,11 @@ def train(filename):
     genders.append(row[1])
     ages.append(row[2])
 
+  print "Starting Image Prediction"
   image_pred = image_predict(users)
+  print "Starting Checkin Prediction"
   checkin_pred = checkin_predict(users)
+  print "Starting Tweet Prediction"
   tweet_pred = tweet_predict(users)
 
   compiled_features = []
@@ -160,10 +169,11 @@ def perform_k_fold(filename):
         g_target.append(genders[i])
         a_target.append(ages[i])
 
-
-
+    print "Starting Image Prediction for training"
     image_pred = image_predict(train)
+    print "Starting Checkin Prediction for training"
     checkin_pred = checkin_predict(train)
+    print "Starting Tweet Prediction for training"
     tweet_pred = tweet_predict(train)
 
     compiled_features = []
@@ -176,13 +186,17 @@ def perform_k_fold(filename):
       compiled_features.append(dummy)
       compiled_targets.append(g_train[i]+" # "+a_train[i])
 
+    print "Training Fusion Classifier"
     fusionClassifier = GradientBoostingClassifier()
     fusionClassifier.fit(compiled_features, compiled_targets)
 
 
 
+    print "Starting Image Prediction for testing"
     image_pred = image_predict(target)
+    print "Starting Checkin Prediction for testing"
     checkin_pred = checkin_predict(target)
+    print "Starting Tweet Prediction for testing"
     tweet_pred = tweet_predict(target)
 
     compiled_features = []
@@ -195,9 +209,8 @@ def perform_k_fold(filename):
       compiled_features.append(dummy)
       compiled_targets.append(g_target[i]+" # "+a_target[i])
 
+    print "Predicting Fusion Prediction"
     pred = fusionClassifier.predict(compiled_features)
+    print "Prediction Done, Report below\n"
     print classification_report(compiled_targets, pred)
     z+=1
-
-
-perform_k_fold("train.csv")
