@@ -15,6 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import cross_validation
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import LabelEncoder
 
 from sklearn.svm import SVC
@@ -72,6 +73,7 @@ def fusion_predict(filename):
   pred = fusionClassifier.predict(compiled_features)
   print "Prediction Done, Report below\n"
   print classification_report(compiled_targets, pred)
+  print confusion_matrix(compiled_targets, pred)
 
 
 
@@ -111,7 +113,7 @@ def train(filename):
 
   compiled_features = np.array(compiled_features)
 
-  fusionClassifier = SVC()
+  fusionClassifier = GradientBoostingClassifier()
   fusionClassifier.fit(compiled_features, compiled_targets)
 
   with open('fusion_classifiers.bin', 'wb') as fp:
@@ -150,6 +152,7 @@ def perform_k_fold(filename):
   cv = cross_validation.KFold(len(users), n_folds=10)
 
   z = 1
+  results = []
   for traincv, testcv in cv:
     print "Starting Iteration ", z
     train = []
@@ -187,7 +190,7 @@ def perform_k_fold(filename):
       compiled_targets.append(g_train[i]+" # "+a_train[i])
 
     print "Training Fusion Classifier"
-    fusionClassifier = SVC()
+    fusionClassifier = GradientBoostingClassifier()
     fusionClassifier.fit(compiled_features, compiled_targets)
 
 
@@ -213,4 +216,6 @@ def perform_k_fold(filename):
     pred = fusionClassifier.predict(compiled_features)
     print "Prediction Done, Report below\n"
     print classification_report(compiled_targets, pred)
+    results.append(accuracy_score(compiled_targets, pred))
     z+=1
+  print "Overall Accuracy: " + str( np.array(results).mean() )

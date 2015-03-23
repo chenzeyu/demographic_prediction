@@ -17,6 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import cross_validation
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 from sklearn.tree import DecisionTreeClassifier
 
 from sklearn.svm import SVC
@@ -103,9 +104,9 @@ train  = decomp.fit_transform(train)
 
 # Initialize Classifier(SVC)
 #########################################
-genderClassifier = DecisionTreeClassifier()
-ageClassifier = DecisionTreeClassifier()
-bothClassifier = DecisionTreeClassifier()
+genderClassifier = SVC()
+ageClassifier = SVC()
+bothClassifier = SVC()
 
 end = time.time()
 #########################################
@@ -146,11 +147,14 @@ for traincv, testcv in cv:
 
 	print "Iteration ", i , "results:"
 	print "Gender Accuracy: ", resultsGender[i-1]
-	print classification_report(genders[testcv[0]:testcv[-1]], gP), "\n"
+	print classification_report(genders[testcv[0]:testcv[-1]], gP)
+	print confusion_matrix(genders[testcv[0]:testcv[-1]], gP), "\n"
 	print "Age Accuracy: ", resultsAge[i-1]
-	print classification_report(ages[testcv[0]:testcv[-1]], aP), "\n"
+	print classification_report(ages[testcv[0]:testcv[-1]], aP)
+	print confusion_matrix(ages[testcv[0]:testcv[-1]], aP), "\n"
 	print "Combined Accuracy: ", resultsBoth[i-1]
-	print classification_report(both[testcv[0]:testcv[-1]], bP), "\n"
+	print classification_report(both[testcv[0]:testcv[-1]], bP)
+	print confusion_matrix(both[testcv[0]:testcv[-1]], bP), "\n"
 
 	end = time.time()
 	print "Elapsed Time for iteration ", i, " : ", end-start
