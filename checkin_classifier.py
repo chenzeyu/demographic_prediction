@@ -6,11 +6,13 @@ from nltk.classify.maxent import MaxentClassifier
 from sklearn.cross_validation import KFold
 import pickle
 
+client = MongoClient('localhost', 27017)
+db = client.test
+checkins = db.checkins.find()
+
 
 def load_checkins():
-    client = MongoClient('localhost', 27017)
-    db = client.test
-    return db.checkins.find()
+    return checkins
 
 
 # generate features for nltk classifiers
